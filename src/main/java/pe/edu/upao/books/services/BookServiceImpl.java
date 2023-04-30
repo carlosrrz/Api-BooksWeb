@@ -44,7 +44,6 @@ public class BookServiceImpl implements BookService{
             book.setUpdatedAt(LocalDateTime.now());
             return bookRepository.save(book);
         }
-
         @Override
         public void deleteBook(Long id) {
             bookRepository.delete(getBookById(id));

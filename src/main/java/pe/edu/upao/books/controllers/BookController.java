@@ -29,7 +29,6 @@ public class BookController {
         Book book1 = bookService.createBook(title,author,description,image);
         return ResponseEntity.ok(book1);
     }
-
     @GetMapping("/{id}")
     public ResponseEntity<Book> getBookById(@PathVariable Long id){
         Book book = bookService.getBookById(id);
@@ -48,5 +47,4 @@ public class BookController {
     public void deleteBook(@PathVariable Long id){
         bookService.deleteBook(id);
     }
-
 }
