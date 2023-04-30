@@ -3,9 +3,18 @@ package pe.edu.upao.books.models;
 import java.time.LocalDateTime;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 @Entity
 @Table(name="books")
+@NoArgsConstructor
+@Data
+@ToString
+@AllArgsConstructor
+
 
 public class Book {
     @Id

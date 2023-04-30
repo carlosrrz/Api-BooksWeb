@@ -2,11 +2,19 @@ package pe.edu.upao.books.models;
 
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.ToString;
 
 import java.time.LocalDateTime;
 
 @Entity
 @Table(name="reviews")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ToString
 
 public class Review {
     @Id
