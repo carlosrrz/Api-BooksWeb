@@ -24,7 +24,6 @@ public class Book {
     private LocalDateTime createdAt;
     @Column(name = "update_at")
     private LocalDateTime updatedAt;
-
     public Book(String title, String author, String description, String imageUrl, LocalDateTime createdAt, LocalDateTime updatedAt) {
         this.title = title;
         this.author = author;
