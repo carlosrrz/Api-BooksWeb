@@ -22,7 +22,6 @@ public class Review {
     private LocalDateTime createdAt;
     @Column(name = "update_at")
     private LocalDateTime updatedAt;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name="book_id", nullable = false)
     private Book book;
