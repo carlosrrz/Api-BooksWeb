@@ -3,6 +3,7 @@ package pe.edu.upao.books.services;
 import jakarta.persistence.EntityNotFoundException;
 import org.springframework.stereotype.Service;
 import pe.edu.upao.books.models.User;
+import pe.edu.upao.books.repositories.UserRepository;
 
 import java.time.LocalDateTime;
 import java.util.List;
@@ -15,7 +16,6 @@ public class UserServiceImpl implements UserService{
     public UserServiceImpl(UserRepository userRepository){
         this.userRepository = userRepository;
     }
-
 
     @Override
     public User createUser(String username, String password, String email) {
