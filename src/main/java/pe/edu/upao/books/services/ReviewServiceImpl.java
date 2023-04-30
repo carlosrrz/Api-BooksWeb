@@ -43,7 +43,6 @@ public class ReviewServiceImpl implements ReviewService{
         review.setUpdatedAt(LocalDateTime.now());
         return reviewRepository.save(review);
     }
-
     @Override
     public void deleteReview(Long id) {
         reviewRepository.delete(getReviewById(id));
