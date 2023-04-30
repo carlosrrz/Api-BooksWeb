@@ -35,7 +35,6 @@ public class BookController {
         Book book = bookService.getBookById(id);
         return ResponseEntity.ok(book);
     }
-
     @PostMapping("/update/{id}")
     public ResponseEntity<Book> updateBookById(@PathVariable Long id,
                                                @RequestParam String title,
@@ -45,7 +44,6 @@ public class BookController {
         Book book1 = bookService.updateBook(id,title,author,description,image);
         return ResponseEntity.ok(book1);
     }
-
     @DeleteMapping("/delete/{id}")
     public void deleteBook(@PathVariable Long id){
         bookService.deleteBook(id);
